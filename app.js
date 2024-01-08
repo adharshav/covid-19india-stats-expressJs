@@ -56,7 +56,7 @@ app.get('/states/:stateId', async (request, response) => {
     state_id = ${stateId}`
 
   const stateByIdArray = await db.get(getStateByIdQuery)
-  response.send(stateByIdArray)
+  response.send(states(stateByIdArray))
 })
 
 //Add district API
