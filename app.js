@@ -167,3 +167,4 @@ app.get('/districts/:districtId/details/', async (request, response) => {
   const getStateNameQueryResponse = await db.get(getStateNameQuery)
   response.send(getStateNameQueryResponse)
 })
+module.exports = app
